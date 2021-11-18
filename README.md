@@ -1,1 +1,3 @@
-# PROG-1845-Final-Group-Project
+# Memory-Group-3
+PROG1845: Front End Programming
+Final Group Project
