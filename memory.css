@@ -1,0 +1,133 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 750px;  
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 { 
+    font-size: 150%;
+    color: blue;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 8em;
+}
+input, select { 
+    width: 10em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+input[type=checkbox] { 
+    width: 2em;
+}
+header p {
+	margin: 0 2em 1em 0;
+}
+#new_game, #player, #high_score, #correct {
+	float: left;
+}
+#cards img {
+    height: 100px;
+    width: 80px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    float: left; 
+}
+.clear {
+    clear: both;
+}
+.memory-game {
+
+    font-size: 0;
+    
+    }
+    
+    .memory-game-inner {
+    
+    margin: 0 auto;
+    
+    padding: 0;
+    
+    width: 100%;
+    
+    text-align: center;
+    
+    }
+    
+    .memory-card-container {
+    
+    display: inline-block;
+    
+    position: relative;
+    
+    }
+    
+    .memory-card-container a.front .back, .memory-card-container a.back .front {
+    
+    display: none;
+    
+    }
+    
+    .memory-card-container a.front .front, .memory-card-container a.back .back {
+    
+    display: block;
+    
+    }
+    
+    .memory-card-wrapper {
+    
+    position: absolute;
+    
+    top: 50%;
+    
+    left: 50%;
+    
+    }
+    
+    .memory-card-container a {
+    
+    display: block;
+    
+    position: absolute;
+    
+    top: 0;
+    
+    left: 0;
+    
+    padding: 0;
+    
+    }
+    
+    .memory-card-container, .memory-card-container * {
+    
+    will-change: transform;
+    
+    }
+    
+    .card {
+    
+    border-radius: 6px;
+    
+    border-width: 2px;
+    
+    border-style: solid;
+    
+    }
+    
+    .card.front {
+    
+    border-color: black;
+    
+    }
+    
+    .card.back {
+    
+    border-color: #666;
+    
+    background-color: #ddd;
+    
+    }
