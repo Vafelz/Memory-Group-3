@@ -1,8 +1,8 @@
 "use strict";
 
-var gamesApp = gamesApp || {};
+var myapp = myapp || {};
 
-gamesApp.settings = {
+myapp.settings = {
 
     setPlayerName: function(name) {
         sessionStorage.playerName = name;
