@@ -11,9 +11,77 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/memory.css">
 </head>
 
 <body>
+	<div id="wrapper">
+		<header>
+			<h1>Memory Game</h1>
+			<p id="new_game"><a href="#" id="newGame">New Game</a></p>
+			<p id="player"><b>Player: </b></p>
+			<p id="high_score"><b>High Score: </b></p>
+		</header>
+
+		<main>
+			<div id="tabs">
+				<ul>
+					<li><a href="#tab-1">Play</a></li>
+					<li><a href="#tab-2">Rules</a></li>
+					<li><a href="#tab-3">Settings</a></li>
+				</ul>
+
+				<div id="tab-1">
+					<div id="cards"></div>
+				</div>
+
+				<div id="tab-2">
+					<fieldset>
+						<legend>How to Play the Memory Game</legend>
+						<ul>
+							<li>The cards are placed faced down. Each card has a matching card.</li>
+							<li>For each turn, the player selects two cards.</li>
+							<li>If the cards match, they are removed from the board.</li>
+							<li>If the cards don't match, they are turned faced down again.</li>
+							<li>At the end of the game, the player receives a score based on the number of correct selections that were made.</li>
+						</ul>
+					</fieldset>
+				</div>
+
+				<div id="tab-3">
+					<label for="player_name">Player Name:</label>
+					<input type="text" name="Player" id="player_name">
+
+					<br>
+
+					<label for="num_cards">No. of Cards:</label>
+					<select>
+						<option>48</option>
+						<option>40</option>
+						<option>32</option>
+						<option>24</option>
+						<option>16</option>
+						<option>8</option>
+					</select>
+
+					<br>
+
+					<input type="button" name="Save Settings" id="save_settings" value="Save Settings">
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/memory.js"></script>
+	<script type="text/javascript" src="js/settings.js"></script>
+	<script type="text/javascript" src="js/card.js"></script>
+	<script type="text/javascript" src="js/cards.js"></script>
+	<script type="text/javascript" src="js/scores.js"></script>
+	<script type="text/javascript" src="js/preload.js"></script>
 </body>
 
 </html>
