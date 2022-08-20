@@ -34,22 +34,6 @@ legend {
 	font-size: 150%;
 }
 
-#newGame {
-	border: 2px solid blue;
-	border-radius: 8px;
-	color: navy;
-	font-size: 120%;
-	margin: auto .5em;
-	padding: .5em;
-	text-decoration: none;
-}
-
-#newGame:hover {
-	background-color: navy;
-	color: white;
-	font-weight: 700;
-}
-
 /*
 input, select {
 	margin-bottom: 1em;

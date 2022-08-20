@@ -40,7 +40,7 @@ gamesApp.settings = {
                 }
             }
         }
-        return [...y,...x]
+        return [y,x]
     },
     startGame: function(array){
         for (var i = 0; i < array.length; i++) {

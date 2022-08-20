@@ -29,9 +29,9 @@ $(document).ready(() => {
         settings.setNumOfImages(numberOfImages / 2)
         window.location.reload()
     })
-    $("ul[role='tablist'] li").click(function() {
+    $("ul[role='table'] li").click(function() {
         if ($(this).find('a').text() == 'Play Game') {
-            $('#player').html(name + '<br/>' + numberOfCards)
+            $('#player').html(name)
         }
     })
     var CheckImages = []

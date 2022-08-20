@@ -38,6 +38,21 @@ legend {
 	font-size: 150%;
 }
 
+#newGame {
+	border: 2px solid blue;
+	border-radius: 8px;
+	color: navy;
+	font-size: 120%;
+	padding: .2em 1.22em;
+	text-decoration: none;
+}
+
+#newGame:hover {
+	background-color: navy;
+	color: white;
+	font-weight: 800;
+}
+
 #wrapper {
 	background-color: #F1F1F1;
 	border: 5px solid lightblue;

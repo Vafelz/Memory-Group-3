@@ -1,6 +1,6 @@
 let funcs = gamesApp.settings
 
-const imagess = [
+const images = [
     '../img/card_1.png',
     '../img/card_2.png',
     '../img/card_3.png',
@@ -28,6 +28,6 @@ const imagess = [
 ]
 if(funcs.getNumberOfImages()){
     $('#player').append(funcs.getPlayerName())
-    let suffledImages  = funcs.shuffleArray(imagess,funcs.getNumberOfImages())
+    let shuffledImages  = funcs.shuffleArray(images,funcs.getNumberOfImages())
     funcs.startGame(suffledImages)
 }
